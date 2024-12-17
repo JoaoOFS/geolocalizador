@@ -64,3 +64,37 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Geolocalizador
+
+Este é um projeto Laravel que utiliza a API do **Nominatim** (OpenStreetMap) para converter endereços em coordenadas geográficas (latitude e longitude) e calcular a distância entre dois pontos usando essas coordenadas.
+
+## Funcionalidades
+
+- **Converter Endereço para Coordenadas:** Recebe um endereço e retorna as coordenadas geográficas correspondentes (latitude e longitude).
+- **Calcular Distância entre Dois Pontos:** Calcula a distância entre dois pontos geográficos com base nas suas coordenadas.
+
+## Tecnologias Utilizadas
+
+- **Laravel:** Framework PHP utilizado para construção do sistema.
+- **Nominatim API (OpenStreetMap):** API de geocodificação para converter endereços em coordenadas.
+- **Guzzle HTTP Client:** Usado para realizar as requisições HTTP para a API do Nominatim.
+
+## Pré-requisitos
+
+Para rodar o projeto em sua máquina local, você precisará do seguinte:
+
+- PHP 8.0 ou superior.
+- Composer.
+- Um servidor web como Apache ou Nginx.
+- Banco de dados MySQL ou SQLite (para persistir dados).
+
+## Instalação
+
+### Passo 1: Clonar o repositório
+
+Clone o repositório para o seu ambiente local:
+
+```bash
+git clone https://github.com/seu-usuario/geolocalizador.git
+cd geolocalizador
